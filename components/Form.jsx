@@ -58,7 +58,7 @@ const Form = () => {
             </p>
           )}
           <p>
-            Do'not Have a account?{" "}
+            Do not Have a account?{" "}
             <Link
               href="/registration"
               className="text-blue-700 underline decoration-blue-700 cursor-pointer"
