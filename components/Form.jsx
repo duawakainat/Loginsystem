@@ -11,6 +11,10 @@ const Form = () => {
   const [error, setError] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if ( !email || !password) {
+      setError("All field are necessar!");
+      return;
+    }
     try {
       const res = await signIn("credentials", {
         email,
