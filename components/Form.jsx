@@ -25,7 +25,7 @@ const Form = () => {
         setError("Invalude credentials");
         return;
       }
-      router.replace("dashboard");
+      router.replace("https://65d46336927c9ba567222a97--magical-sfogliatella-86478b.netlify.app/");
     } catch (error) {
       console.log(error);
     }
