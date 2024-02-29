@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 const Form = () => {
   const router = useRouter();
@@ -25,7 +26,7 @@ const Form = () => {
         setError("Invalude credentials");
         return;
       }
-      router.replace("https://65d46336927c9ba567222a97--magical-sfogliatella-86478b.netlify.app/");
+      router.replace("dashboard");
     } catch (error) {
       console.log(error);
     }
@@ -71,9 +72,13 @@ const Form = () => {
             </Link>
           </p>
         </form>
+      <button onClick={() => signIn('google')}>sign in with gooogle</button>
       </div>
+      <div>
+    </div>
     </div>
   );
-};
 
+  
+};
 export default Form;
