@@ -12,7 +12,7 @@ const Form = () => {
   const [error, setError] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if ( !email || !password) {
+    if (!email || !password) {
       setError("All field are necessar!");
       return;
     }
@@ -41,6 +41,7 @@ const Form = () => {
             <input
               name="email"
               id="email"
+              placeholder="Enter Email"
               className="p-1 border-[2px] w-full"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -50,6 +51,7 @@ const Form = () => {
             <input
               name="password"
               id="password"
+              placeholder="Enter Password"
               className="p-1 border-[2px] w-full"
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -72,13 +74,10 @@ const Form = () => {
             </Link>
           </p>
         </form>
-      <button onClick={() => signIn('google')}>sign in with gooogle</button>
+        <button onClick={() => signIn("google")}>sign in with gooogle</button>
       </div>
-      <div>
-    </div>
+      <div></div>
     </div>
   );
-
-  
 };
 export default Form;
