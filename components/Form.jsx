@@ -74,7 +74,7 @@ const Form = () => {
             </Link>
           </p>
         </form>
-        <button className="shadow-lg underline border-[1px] mt-3 rounded-r-md border-gray-300 p-3 cursor-pointer"
+        <button className="shadow-lg w-full text-sm underline border-[1px] mt-3 rounded-r-md border-gray-300 p-3 cursor-pointer"
         onClick={() => signIn("google")}>sign in with gooogle</button>
       </div>
       <div></div>
